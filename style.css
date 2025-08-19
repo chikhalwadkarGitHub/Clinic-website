@@ -4,7 +4,7 @@
 :root {
   --primary: #1976d2;
   --accent: #0cbaba;
-  --bg-gradient: linear-gradient(135deg, #f6fafe 0%, #e0edff 100%);
+  --bg-gradient: linear-gradient(135deg, #d8eefe 0%, #b8daff 100%);
   --bg-card: #ffffffee;
   --shadow: 0 1px 8px 0 rgba(33,150,243,.06);
   --text: #1a1a1a;
@@ -77,6 +77,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
+  position: relative;
 }
 .nav-logo {
   font-weight: 800;
@@ -88,6 +89,7 @@ body {
   gap: 2.5rem;
   list-style: none;
   font-weight: 600;
+  transition: transform 0.3s ease;
 }
 .nav-links a {
   color: #124063;
@@ -113,7 +115,41 @@ body {
   background: #124063;
 }
 
-/* Home Hero */
+/* Mobile Navigation */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+  z-index: 105;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 220px;
+    height: calc(100vh - 64px);
+    background: #fff;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.2rem;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.12);
+    transform: translateX(100%);
+    z-index: 100;
+  }
+  .nav-links.mobile-open {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
 .home-hero {
   position: relative;
   min-height: 47vw;
@@ -153,6 +189,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  max-width: 90%;
 }
 .hero-subtitle {
   font-size: 1.15em;
@@ -369,14 +406,14 @@ iframe {
   background: var(--primary);
   color: #fff;
   text-align: center;
-  padding: 1.3rem 0;
+  padding: 1.3rem 1rem;
   margin-top: 4rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   letter-spacing: 0.6px;
   border-radius: 0 0 18px 18px;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 900px) {
   .hero-content {
     padding: 6vw 1.5vw;
@@ -395,12 +432,22 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1.4rem 0;
+  }
+  .service-card {
+    padding: 1.3rem 1rem;
+  }
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+  .service-card p {
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .hero-title {
     font-size: 1.5rem;
     line-height: 1.3;
