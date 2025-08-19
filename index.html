@@ -7,120 +7,117 @@
   <meta name="description" content="Comprehensive physiotherapy and rehabilitation care in Ravet, Pune – Advanced orthopedic, sports injury, neurological physiotherapy, and more. Free consultation available.">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-<header id="top">
-  <nav>
-    <div class="logo">Dr. Arya’s Physio</div>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" class="menu">&#9776;</label>
-    <ul class="menu-items">
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <span><i class="fa fa-envelope"></i> aryasphysio12@gmail.com</span>
+      <span><i class="fa fa-map-marker-alt"></i> 97/1 SB Patil school road, Ravet, Pune</span>
+      <span><i class="fa fa-phone"></i> <a href="tel:+918767887494">+91 8767 887 494</a></span>
+      <a href="https://wa.me/918767887494" class="top-bar-btn">Appointments</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-main">
+    <div class="nav-logo">
+      Dr. Arya’s PhysioCare
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog Posts</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
+    <a href="https://wa.me/918767887494" class="nav-cta">Appointments</a>
   </nav>
 
-  <section class="hero">
-    <img src="assets/clinic.jpg" alt="Clinic interior">
-    <div class="hero-text">
-      <h1>Movement is Medicine</h1>
-      <p>Personalized physiotherapy that keeps you moving pain-free.</p>
-      <a href="https://wa.me/918767887494" class="cta">Book Free Consultation</a>
+  <!-- Hero Section -->
+  <section class="home-hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-subtitle">Consult Now</div>
+      <h1 class="hero-title">
+        We provide complete<br>
+        range of Physiotherapy solutions
+      </h1>
+      <div class="hero-desc">
+        Providing you the best Physiotherapy services in Ravet, Pune, which you can trust.<br>
+        We have vast experience and advanced therapies to offer customized treatment to our patients.
+      </div>
+      <a href="https://wa.me/918767887494" class="hero-btn">Book Appointment</a>
     </div>
+    <img src="assets/clinic.jpg" alt="Clinic Hero" class="hero-bg">
   </section>
-</header>
 
-<main>
-  <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <span style="font-size:1.6em;">🦵</span>
-        <div>
-          <strong>Arthritis Treatment</strong>
-          <p style="font-size:.98em;color:#124063;">Pain relief & mobility improvement for arthritic joints.</p>
-        </div>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🦵</div>
+        <h3>Arthritis Treatment</h3>
+        <p>Pain relief & mobility improvement for arthritic joints.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.6em;">🦶</span>
-        <div>
-          <strong>Foot & Ankle Pain</strong>
-          <p style="font-size:.98em;color:#124063;">Specialized therapy for foot or ankle injuries/strains.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🦶</div>
+        <h3>Foot & Ankle Pain</h3>
+        <p>Specialized therapy for foot or ankle injuries and strains.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">👵</span>
-        <div>
-          <strong>Geriatric Physiotherapy</strong>
-          <p style="font-size:.98em;color:#124063;">Promoting mobility & independence for the elderly.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">👵</div>
+        <h3>Geriatric Physiotherapy</h3>
+        <p>Promoting mobility & independence for the elderly.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">♨️</span>
-        <div>
-          <strong>Heat Therapy</strong>
-          <p style="font-size:.98em;color:#124063;">Advanced modalities for pain & muscle relief.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">♨️</div>
+        <h3>Heat Therapy</h3>
+        <p>Advanced modalities for pain and muscle relief.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">🦴</span>
-        <div>
-          <strong>Hip Pain Management</strong>
-          <p style="font-size:.98em;color:#124063;">Restoring hip mobility and function.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🦴</div>
+        <h3>Hip Pain Management</h3>
+        <p>Restoring hip mobility and function.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">🦵</span>
-        <div>
-          <strong>Knee Pain Rehabilitation</strong>
-          <p style="font-size:.98em;color:#124063;">Personalized therapy for knee injuries & arthritis.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🦵</div>
+        <h3>Knee Pain Rehabilitation</h3>
+        <p>Personalized therapy for knee injuries and arthritis.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">🏥</span>
-        <div>
-          <strong>Orthopaedic Care</strong>
-          <p style="font-size:.98em;color:#124063;">Complete musculoskeletal and post-surgery rehab.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🏥</div>
+        <h3>Orthopaedic Care</h3>
+        <p>Complete musculoskeletal and post-surgery rehab.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">🏋️‍♂️</span>
-        <div>
-          <strong>Shoulder Pain</strong>
-          <p style="font-size:.98em;color:#124063;">Relief for rotator cuff, frozen shoulder, injuries.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">🏋️‍♂️</div>
+        <h3>Shoulder Pain</h3>
+        <p>Relief for rotator cuff, frozen shoulder, and injuries.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">💪</span>
-        <div>
-          <strong>Spinal Injuries</strong>
-          <p style="font-size:.98em;color:#124063;">Advanced rehab for spinal conditions & injuries.</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon">💪</div>
+        <h3>Spinal Injuries</h3>
+        <p>Advanced rehab for spinal conditions & injuries.</p>
       </div>
-      <div class="card">
-        <span style="font-size:1.5em;">🤸‍♀️</span>
-        <div>
-          <strong>Therapeutic Exercise</strong>
-          <p style="font-size:.98em;color:#124063;">Customized exercise plans for all ages & goals.</p>
-        </div>
-      </div>
-      <div class="card wide">
-        <strong>We treat a wide range of orthopaedic, sports, and neurological conditions with advanced therapies.</strong>
+      <div class="service-card">
+        <div class="service-icon">🤸‍♀️</div>
+        <h3>Therapeutic Exercise</h3>
+        <p>Customized exercise plans for all ages & goals.</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About the Clinic</h2>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About the Clinic</h2>
     <p>
-      At <strong>Dr. Arya's Advanced Physiotherapy and Rehabilitation Clinic</strong>, we believe <em>movement is medicine</em>.  
-      Our state-of-the-art facility in Ravet, Pune, offers comprehensive care in Orthopaedic Rehabilitation,  
-      Sports Injury Management, Women’s Health Physiotherapy, Neurological Rehabilitation, Paediatric Care,  
+      At <strong>Dr. Arya's Advanced Physiotherapy and Rehabilitation Clinic</strong>, we believe <em>movement is medicine</em>.
+      Our state-of-the-art facility in Ravet, Pune, offers comprehensive care in Orthopaedic Rehabilitation,
+      Sports Injury Management, Women’s Health Physiotherapy, Neurological Rehabilitation, Paediatric Care,
       and Post-Operative Recovery.
     </p>
     <p>
@@ -130,9 +127,9 @@
     </p>
   </section>
 
-  <!-- Team -->
-  <section id="team">
-    <h2>Meet the Team</h2>
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <h2 class="section-title">Meet the Team</h2>
     <div class="team-card">
       <img src="assets/arya.jpg" alt="Dr. Arya photo">
       <h3>Dr. Arya Ashtapure Chikhalwadkar</h3>
@@ -141,15 +138,15 @@
     </div>
   </section>
 
-  <!-- Offers -->
-  <section id="offer">
-    <h2>Special Offer</h2>
+  <!-- Special Offer Section -->
+  <section id="offer" class="offer-section">
+    <h2 class="section-title">Special Offer</h2>
     <p class="offer-banner">✨ Free Consultation – Limited Period ✨</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact & Location</h2>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact & Location</h2>
     <div class="contact-details">
       <p><strong>Address:</strong> 97/1 S.B. Patil School Road, Near Arun Viva Society, Mhaske Vasti, Ravet, Pimpri-Chinchwad, Pune 412101</p>
       <p><strong>Phone/WhatsApp:</strong> <a href="tel:+918767887494">+91 8767 887 494</a></p>
@@ -165,10 +162,9 @@
 
     <a href="https://wa.me/918767887494" class="cta">WhatsApp Now</a>
   </section>
-</main>
 
-<footer>
-  <p>&copy; 2025 Dr. Arya’s Advanced Physiotherapy and Rehabilitation Clinic. All rights reserved.</p>
-</footer>
+  <footer class="footer">
+    <p>&copy; 2025 Dr. Arya’s Advanced Physiotherapy and Rehabilitation Clinic. All rights reserved.</p>
+  </footer>
 </body>
 </html>
