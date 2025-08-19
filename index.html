@@ -24,7 +24,7 @@
   <!-- Navigation Bar -->
   <nav class="nav-main">
     <div class="nav-logo">
-      Dr. Arya's Advanced Physiotherapy and Rehabilitation Clinic
+      Dr. Arya’s PhysioCare
     </div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -33,7 +33,7 @@
       <li><a href="#blog">Blog Posts</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
-    <a href="https://wa.me/918767887494" class="nav-cta">Appointments</a>
+    <!-- Menu Toggle button added dynamically by JS -->
   </nav>
 
   <!-- Hero Section -->
@@ -166,5 +166,25 @@
   <footer class="footer">
     <p>&copy; 2025 Dr. Arya’s Advanced Physiotherapy and Rehabilitation Clinic. All rights reserved.</p>
   </footer>
+
+  <!-- Mobile Navigation Toggle Script -->
+  <script>
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.createElement('div');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '&#9776;';
+    document.querySelector('.nav-main').appendChild(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-open');
+    });
+
+    // Close menu on link click (mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-open');
+      });
+    });
+  </script>
 </body>
 </html>
