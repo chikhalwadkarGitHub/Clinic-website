@@ -26,46 +26,6 @@ body {
   line-height: 1.7;
 }
 
-/* Top Info Bar */
-.top-bar {
-  width: 100%;
-  background: #1e3359;
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  letter-spacing: 0.02em;
-}
-.top-bar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-size: 1em;
-}
-.top-bar-content span {
-  margin-right: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.35em;
-}
-.top-bar-btn {
-  background: linear-gradient(90deg, #133e7c 60%, #22c1c3);
-  color: #fff;
-  padding: 0.45em 1.4em;
-  border-radius: 5px;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1em;
-  transition: background 0.17s;
-}
-.top-bar-btn:hover {
-  background: #1976d2;
-}
-
 /* Navigation */
 .nav-main {
   display: flex;
@@ -100,18 +60,52 @@ body {
 .nav-links a:hover {
   color: #1976d2;
 }
-.nav-cta {
-  background: linear-gradient(90deg, #1976d2, #19c4e4);
-  color: #fff;
-  padding: 0.63em 1.9em;
-  border-radius: 5px;
-  font-size: 1.05em;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 1.5px 7px #1976d221;
-  transition: background 0.2s;
+
+/* Contact Info Bar */
+.contact-bar {
+  width: 100%;
+  background: linear-gradient(135deg, #b8daff 0%, #a0c9ff 100%); /* Light blue with shading effect */
+  color: #124063;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.02em;
 }
-.nav-cta:hover {
+.contact-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1em;
+}
+.contact-bar-content span {
+  margin-right: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+}
+.contact-bar-content a {
+  color: #124063;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-bar-content a:hover {
+  text-decoration: underline;
+}
+.contact-bar-btn {
+  background: linear-gradient(90deg, #1976d2 60%, #0cbaba);
+  color: #fff;
+  padding: 0.45em 1.4em;
+  border-radius: 5px;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  transition: background 0.17s;
+}
+.contact-bar-btn:hover {
   background: #124063;
 }
 
