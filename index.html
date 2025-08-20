@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Dr. Arya's Advanced Physiotherapy and Rehabilitation Clinic</title>
+  <title>Dr. Arya's Physiotherapy and Rehabilitation Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Comprehensive physiotherapy and rehabilitation care in Ravet, Pune – Advanced orthopedic, sports injury, neurological physiotherapy, and more. Free consultation available.">
   <link rel="stylesheet" href="style.css">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Navigation Bar (Clinic Name + Menu) -->
+  <!-- Navigation Bar (Logo & Menu) -->
   <nav class="nav-main">
     <div class="nav-logo">
       Dr. Arya's Physiotherapy and Rehabilitation Clinic
@@ -23,22 +23,29 @@
       <li><a href="#blog">Blog Posts</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
-    <!-- Menu Toggle button added dynamically by JS -->
   </nav>
 
-  <!-- Contact Info Bar (Mail, Address, Phone, Appointments) -->
-  <div class="contact-bar">
-    <div class="contact-bar-content">
-      <span><i class="fa fa-envelope"></i> <a href="mailto:aryasphysio12@gmail.com">aryasphysio12@gmail.com</a></span>
-      <span><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/aeAm2chwq9J2b4Gp9?g_st=aw" target="_blank">97/1 SB Patil school road, Ravet, Pune</a></span>
-      <span><i class="fa fa-phone"></i> <a href="tel:+918767887494">+91 8767 887 494</a></span>
-      <a href="https://wa.me/918767887494" class="contact-bar-btn">Appointments</a>
+  <!-- Contact Info Section -->
+  <section class="info-bar">
+    <div class="info-bar-content">
+      <div>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:aryasphysio12@gmail.com" class="info-link">aryasphysio12@gmail.com</a>
+      </div>
+      <div>
+        <i class="fa fa-map-marker-alt"></i>
+        <a href="https://maps.app.goo.gl/aeAm2chwq9J2b4Gp9?g_st=aw" class="info-link" target="_blank">97/1 SB Patil school road, Ravet, Pune</a>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <a href="tel:+918767887494" class="info-link">+91 8767 887 494</a>
+      </div>
+      <a href="https://wa.me/918767887494" class="info-cta">Appointments</a>
     </div>
-  </div>
+  </section>
 
   <!-- Hero Section -->
   <section class="home-hero" id="home">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-subtitle">Consult Now</div>
       <h1 class="hero-title">
@@ -153,38 +160,16 @@
       <p><strong>Email:</strong> <a href="mailto:aryasphysio12@gmail.com">aryasphysio12@gmail.com</a></p>
       <p><strong>Hours:</strong> Mon–Sat 10:00 AM – 2:00 PM | Sun Closed</p>
     </div>
-
     <iframe
       title="Google Map"
       src="https://maps.google.com/maps?q=17.658880,73.762104&z=15&output=embed"
       loading="lazy"
       allowfullscreen></iframe>
-
     <a href="https://wa.me/918767887494" class="cta">WhatsApp Now</a>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 Dr. Arya’s Advanced Physiotherapy and Rehabilitation Clinic. All rights reserved.</p>
   </footer>
-
-  <!-- Mobile Navigation Toggle Script -->
-  <script>
-    const navLinks = document.querySelector('.nav-links');
-    const menuToggle = document.createElement('div');
-    menuToggle.classList.add('menu-toggle');
-    menuToggle.innerHTML = '&#9776;';
-    document.querySelector('.nav-main').appendChild(menuToggle);
-
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('mobile-open');
-    });
-
-    // Close menu on link click (mobile)
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('mobile-open');
-      });
-    });
-  </script>
 </body>
 </html>
