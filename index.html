@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <!-- Header area -->
   <header>
     <div class="site-title">
       Dr. Arya's Physiotherapy and Rehabilitation Clinic
@@ -35,6 +36,7 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="home-hero" id="home">
     <div class="hero-content">
       <div class="hero-subtitle">Consult Now</div>
@@ -51,7 +53,8 @@
     <img src="assets/clinic.jpg" alt="Clinic Hero" class="hero-bg"/>
   </section>
 
-  <section id="services" class="services-section">
+  <!-- Our Services Section -->
+  <section id="services" class="main-card services-section">
     <h2 class="section-title">Our Services</h2>
     <div class="services-grid">
       <div class="service-card"><div class="service-icon">🦵</div><h3>Arthritis Treatment</h3><p>Pain relief & mobility improvement for arthritic joints.</p></div>
@@ -67,7 +70,8 @@
     </div>
   </section>
 
-  <section id="about" class="about-section card">
+  <!-- About Section -->
+  <section id="about" class="main-card about-section">
     <h2 class="section-title">About the Clinic</h2>
     <p>
       At <strong>Dr. Arya's Advanced Physiotherapy and Rehabilitation Clinic</strong>, we believe <em>movement is medicine</em>.
@@ -82,7 +86,8 @@
     </p>
   </section>
 
-  <section id="team" class="team-section card">
+  <!-- Team Section -->
+  <section id="team" class="main-card team-section">
     <h2 class="section-title">Meet the Team</h2>
     <div class="team-card">
       <img src="assets/arya.jpg" alt="Dr. Arya photo" />
@@ -92,12 +97,14 @@
     </div>
   </section>
 
-  <section id="offer" class="offer-section card">
+  <!-- Special Offer Section -->
+  <section id="offer" class="main-card offer-section">
     <h2 class="section-title">Special Offer</h2>
     <p class="offer-banner">✨ Free Consultation – Limited Period ✨</p>
   </section>
 
-  <section id="contact" class="contact-section card">
+  <!-- Contact Section -->
+  <section id="contact" class="main-card contact-section">
     <h2 class="section-title">Contact & Location</h2>
     <div class="contact-details">
       <p><strong>Address:</strong> 97/1 S.B. Patil School Road, Near Arun Viva Society, Mhaske Vasti, Ravet, Pimpri-Chinchwad, Pune 412101</p>
@@ -121,7 +128,6 @@
   </footer>
 
   <script>
-    // Hamburger menu functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const mainMenu = document.querySelector('.main-menu ul');
     menuToggle.addEventListener('click', function() {
