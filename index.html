@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Dr. Arya's Physiotherapy and Rehabilitation Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Comprehensive physiotherapy and rehabilitation care in Ravet, Pune – Advanced orthopedic, sports injury, neurological physiotherapy, and more." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-  <!-- Header Block: clinic title -->
-  <header class="header-top">
-    <div class="clinic-title">
+
+  <header>
+    <div class="site-title">
       Dr. Arya's Physiotherapy and Rehabilitation Clinic
     </div>
-    <div class="title-underline"></div>
-    <!-- Navigation Menu -->
-    <nav class="nav-menu">
-      <ul class="nav-links">
+    <div class="site-underline"></div>
+    <nav class="main-menu">
+      <button class="menu-toggle">&#9776;</button>
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#blog">Blog Posts</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <div class="menu-toggle">&#9776;</div>
     </nav>
-    <!-- Contact info and appointment button -->
-    <div class="contact-bar">
-      <div class="contact-items">
-        <span><i class="fa fa-envelope"></i> <a href="mailto:aryasphysio12@gmail.com">aryasphysio12@gmail.com</a></span>
-        <span><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/aeAm2chwq9J2b4Gp9?g_st=aw" target="_blank">97/1 SB Patil school road, Ravet, Pune</a></span>
-        <span><i class="fa fa-phone"></i> <a href="tel:+918767887494">+91 8767 887 494</a></span>
-      </div>
-      <a href="https://wa.me/918767887494" class="appt-btn">Appointments</a>
+    <div class="contact-topbar">
+      <span><i class="fa fa-envelope"></i> <a href="mailto:aryasphysio12@gmail.com">aryasphysio12@gmail.com</a></span>
+      <span><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/aeAm2chwq9J2b4Gp9?g_st=aw" target="_blank">97/1 SB Patil school road, Ravet, Pune</a></span>
+      <span><i class="fa fa-phone"></i> <a href="tel:+918767887494">+91 8767 887 494</a></span>
+      <a href="https://wa.me/918767887494" class="top-appoint">Appointments</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="home-hero" id="home">
     <div class="hero-content">
       <div class="hero-subtitle">Consult Now</div>
@@ -55,8 +50,6 @@
     </div>
     <img src="assets/clinic.jpg" alt="Clinic Hero" class="hero-bg"/>
   </section>
-
-  <!-- ... (Rest of site: services, about, offer, contact, team, footer) ... -->
 
   <section id="services" class="services-section">
     <h2 class="section-title">Our Services</h2>
@@ -88,7 +81,21 @@
       aiming for an active lifestyle—<strong>feel strong, live strong.</strong>
     </p>
   </section>
-  <!-- Add other blocks: team, offer, contact, footer, etc. -->
+
+  <section id="team" class="team-section card">
+    <h2 class="section-title">Meet the Team</h2>
+    <div class="team-card">
+      <img src="assets/arya.jpg" alt="Dr. Arya photo" />
+      <h3>Dr. Arya Ashtapure Chikhalwadkar</h3>
+      <p>BPTH, MPTH – Sports Physiotherapy</p>
+      <p>Founder & Chief Physiotherapist</p>
+    </div>
+  </section>
+
+  <section id="offer" class="offer-section card">
+    <h2 class="section-title">Special Offer</h2>
+    <p class="offer-banner">✨ Free Consultation – Limited Period ✨</p>
+  </section>
 
   <section id="contact" class="contact-section card">
     <h2 class="section-title">Contact & Location</h2>
@@ -114,15 +121,15 @@
   </footer>
 
   <script>
-    const navMenu = document.querySelector(".nav-menu");
-    const menuToggle = navMenu.querySelector(".menu-toggle");
-    const navLinks = navMenu.querySelector(".nav-links");
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-open");
+    // Hamburger menu functionality
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('.main-menu ul');
+    menuToggle.addEventListener('click', function() {
+      mainMenu.classList.toggle('open');
     });
-    navLinks.querySelectorAll("a").forEach(link => {
+    mainMenu.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
-        navLinks.classList.remove("mobile-open");
+        mainMenu.classList.remove("open");
       });
     });
   </script>
